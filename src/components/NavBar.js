@@ -15,8 +15,10 @@ const NavBar = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar color="light" light expand="md">
+      <Navbar
+       color="light"
+       light expand="md"
+       className="sticky-top navbar-dark bg-dark">
         <NavbarBrand href="/">Casey Walker</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
@@ -30,7 +32,6 @@ const NavBar = () => {
         </Nav>
         </Collapse>
       </Navbar>
-    </div>
   );
 };
 
