@@ -2,13 +2,12 @@ import React from 'react';
 
 export default function AboutMe() {
   return (
-    <div>
-      <h2>About me</h2>
+    <div className='about-me'>
       <div className="about-me-para">
-        <p>This is where info about me will go</p>
+        <p>I started my Technology journey in 2015, working as Data Center Sales Manager, and more recently as a Telecommunications Account Exeuctive. I quickly found a passion for software development and currently spend my nights and weekends with the Nashville Software School.</p>
       </div>
       <div>
-        <p>And this is where my image will go!</p>
+        <img src="https://raw.githubusercontent.com/caseywalker/images/main/Headshot1.PNG" alt='Headshot' className='about-img' />
       </div>
     </div>
   );

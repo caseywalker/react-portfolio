@@ -1,0 +1,25 @@
+.about-me {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #272b2e;
+  padding-top: 25px;
+  color:#ced3d6;
+}
+
+.about-me-para {
+  width: 525px;
+  font-family: Georgia;
+  font-size: 24px;
+  padding-top: 35px;
+}
+
+.about-me img {
+  border-radius: 50%;
+  height: 325px;
+}
+
+.about-img {
+  align-self: flex-end;
+}
