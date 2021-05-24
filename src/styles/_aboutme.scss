@@ -3,23 +3,33 @@
   flex-flow: row wrap;
   justify-content: space-around;
   width: 100%;
-  background-color: #272b2e;
-  padding-top: 25px;
-  color:#ced3d6;
+  height: 100%;
+  background-color: $bgColor;
+  padding-top: 100px;
+  padding-bottom: 150px;
+  color: $font;
+  font-family: Georgia;
+  font-size: 24px;
 }
 
 .about-me-para {
-  width: 525px;
+  width: 45%;
   font-family: Georgia;
   font-size: 24px;
-  padding-top: 35px;
+  padding-top: 10px;
 }
 
 .about-me img {
   border-radius: 50%;
   height: 325px;
+  padding-bottom: 20px;
 }
 
 .about-img {
   align-self: flex-end;
+}
+
+hr {
+  background-color: #566d91;
+  width: 50%;
 }

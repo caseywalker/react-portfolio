@@ -1,9 +1,11 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import 'semantic-ui-css/semantic.min.css';
 @import 'variables';
 @import 'intro';
 @import 'aboutme';
 @import 'navbar';
+@import 'technologies';
 
 body {
-  background-color: $favColor;
+  background-color: $bgColor;
 }

@@ -1,0 +1,27 @@
+.technologies {
+  background-image: url(https://raw.githubusercontent.com/caseywalker/images/main/tech.png);
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  color: $font;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+
+.row1 {
+  padding-top: 45px;
+}
+
+.row2 {
+  padding-top: 125px;
+  padding-bottom: 75px;
+}
+
+.technologies p {
+  font-size: 52px;
+  font-weight: 500;
+  font-family: Georgia;
+}
