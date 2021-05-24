@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMe from '../components/AboutMe';
 import Intro from '../components/Intro';
+import Projects from '../components/Projects';
 import Technologies from '../components/Technologies';
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <Intro />
       <AboutMe />
       <Technologies />
+      <Projects />
     </div>
   );
 }
