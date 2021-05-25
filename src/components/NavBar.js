@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
 } from 'reactstrap';
 
 const NavBar = () => {
@@ -21,14 +19,14 @@ const NavBar = () => {
        className="sticky-top navbar-dark bg-dark">
         <NavbarBrand href="/">Casey Walker</NavbarBrand>
         <NavbarToggler onClick={toggle} />
+
         <Collapse isOpen={isOpen} navbar>
         <Nav className="mr-auto" navbar>
-          <NavItem>
-            <Link className="nav-link" to="/">Home</Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" to="/">Projects</Link>
-          </NavItem>
+        <a className='navbar-text' href='/'>Home &nbsp;</a>
+        <a className='navbar-text' href='/#aboutlink'>About &nbsp;</a>
+        <a className='navbar-text' href='/#technologieslink'>Technologies &nbsp;</a>
+        <a className='navbar-text' href='/#projectlink'>Portfolio &nbsp;</a>
+        <a className='navbar-text' href='/#connectlink'>Connect </a>
         </Nav>
         </Collapse>
       </Navbar>

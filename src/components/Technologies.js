@@ -4,6 +4,7 @@ import { Icon } from 'semantic-ui-react';
 export default function Technologies() {
   return (
     <div className='technologies'>
+      <a className='test' name='technologieslink'></a>
       <p>Technologies</p>
       <div className='row1'>
         <Icon name='react' size='massive' className='mx-5' />
