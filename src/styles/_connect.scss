@@ -1,0 +1,31 @@
+.connect {
+  background-image: url(https://raw.githubusercontent.com/caseywalker/images/main/network2.png);
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  color: $font;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.icon-link {
+  color: white;
+}
+
+.connect-head {
+  color: $font;
+  font-size: 52px;
+  font-weight: 500;
+  font-family: Georgia;
+}
+
+.navbar-text:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px #566d91;
+}
+
+.test {
+  padding: 30px;
+  margin: 0px;
+}

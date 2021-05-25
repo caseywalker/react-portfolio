@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle
+  CardTitle
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 
@@ -17,11 +17,11 @@ function ProjectCard({
       <Card>
         <CardImg top width="100%" src={imageUrl} alt="Card image cap" />
         <CardBody>
-          <CardTitle tag="h5">{title}</CardTitle>
-          <CardSubtitle tag="h6" className="mb-2 text-muted">{link}</CardSubtitle>
+          <CardTitle className="card-title">{title}</CardTitle>
           <CardText>{description}</CardText>
-          <CardText>{firebaseKey}</CardText>
+          <CardText className="hidden">{firebaseKey}</CardText>
         </CardBody>
+        <a href={link} className="btn btn-secondary btn-lg active" role="button" aria-pressed="true" target="blank">Visit App</a>
       </Card>
     </div>
   );

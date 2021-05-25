@@ -12,6 +12,7 @@ export default function Projects() {
 
   return (
     <div className='project-board'>
+      <a className='test' name='projectlink'></a>
       <p>Projects</p>
       <hr />
       <div className='projects'>
