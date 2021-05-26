@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { getProjects } from '../helpers/data/projectData';
 import ProjectCard from './ProjectCard';
 
-function Projects() {
+function ProjectsAdmin() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -32,4 +32,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsAdmin;

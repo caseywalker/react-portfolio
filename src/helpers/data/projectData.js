@@ -9,4 +9,16 @@ const getProjects = () => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-export default getProjects;
+const addProject = (object) => new Promise((resolve, reject) => {
+  axios.post(`${dbURL}/projects.json`, object)
+    .then((response) => {
+      const body = { firebaseKey: response.data.name };
+      axios.patch(`${dbURL}/projects/${response.data.name}.json`, body)
+        .then(() => {
+          getProjects().then((projectsArray) => resolve(projectsArray));
+        });
+    })
+    .catch((error) => reject(error));
+});
+
+export { getProjects, addProject };
