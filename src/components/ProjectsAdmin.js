@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getProjects } from '../helpers/data/projectData';
 import ProjectCard from './ProjectCard';
+import ProjectForm from './ProjectForm';
 
 function ProjectsAdmin() {
   const [projects, setProjects] = useState([]);
@@ -15,6 +16,7 @@ function ProjectsAdmin() {
       <p>Projects</p>
       <hr />
       <div className='projects'>
+      <ProjectForm setProjects={setProjects} />
         {
           projects.map((projectInfo) => (
             <ProjectCard

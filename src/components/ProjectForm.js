@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { addProject } from '../helpers/data/projectData';
 
-export default function ProjectForm() {
+export default function ProjectForm({ setProjects }) {
   const [project, setProject] = useState({
     title: '',
     link: '',
@@ -18,7 +19,7 @@ export default function ProjectForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addProject(project).then((projectArray) => console.warn(projectArray));
+    addProject(project).then((projectArray) => setProjects(projectArray));
   };
 
   return (
@@ -62,3 +63,7 @@ export default function ProjectForm() {
     </div>
   );
 }
+
+ProjectForm.propTypes = {
+  setProjects: PropTypes.func
+};
