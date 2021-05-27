@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { getProjects } from '../helpers/data/projectData';
-import ProjectCard from './ProjectCard';
+import ProjectCardAdmin from './ProjectCardAdmin';
+import ProjectForm from './ProjectForm';
 
-function Projects() {
+function ProjectsAdmin() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -12,18 +13,23 @@ function Projects() {
   return (
     <div className='project-board'>
       <a className='test' name='projectlink'></a>
+      <div className='add-project-form'>
+      <ProjectForm setProjects={setProjects} formTitle={'Add Project'} />
+      </div>
       <p>Projects</p>
       <hr />
       <div className='projects'>
+      <br />
         {
           projects.map((projectInfo) => (
-            <ProjectCard
+            <ProjectCardAdmin
             key={projectInfo.firebaseKey}
             firebaseKey={projectInfo.firebaseKey}
             imageUrl={projectInfo.image}
             description={projectInfo.description}
             title={projectInfo.title}
             link={projectInfo.link}
+            setProjects={setProjects}
             />
           ))
          }
@@ -32,4 +38,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsAdmin;

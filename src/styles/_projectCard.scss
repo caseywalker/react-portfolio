@@ -6,7 +6,19 @@
   padding: 0px 7px;
 }
 
-.card {
+.admin-project-card {
+  width: 525px;
+  height: 955px;
+  margin: 20px 15px;
+  background-color: $bgColor;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: black;
+  font-family: Georgia;
+  font-size: 18px;
+}
+
+.non-admin-project-card {
   width: 525px;
   height: 655px;
   margin: 20px 15px;
@@ -31,4 +43,9 @@
 
 .hidden {
   display: none;
+}
+
+.project-form {
+  display: flex;
+  flex-flow: column wrap;
 }

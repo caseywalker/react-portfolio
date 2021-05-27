@@ -1,0 +1,30 @@
+{
+  "-MaKQLeLzf6-ASQ4Gho1" : {
+    "description" : "Team Roster is an app that allows a user to Create, View, Update, and Delete Players from a Roster that they can manage. The user may select their favorite NHL players, or build out a fantasy team of the best in the league!",
+    "firebaseKey" : "-MaKQLeLzf6-ASQ4Gho1",
+    "image" : "https://github.com/caseywalker/images/blob/main/RR3.PNG?raw=true",
+    "link" : "https://cw-roster.netlify.app",
+    "title" : "Team Roster"
+  },
+  "-MaKQt2ywu44AJ9p_Soq" : {
+    "description" : "Shark Tank is a web app that contains our class roster, a user can click the Shark Attack button to send a student to the Dearly Departed section. Feel free to click until none remain! Built in React, utilizing hooks such as state and props to send data between components, and styled with ReactStrap. ",
+    "firebaseKey" : "-MaKQt2ywu44AJ9p_Soq",
+    "image" : "https://github.com/caseywalker/images/blob/main/SA-dd.PNG?raw=true",
+    "link" : "https://cw-shark-attack.netlify.app",
+    "title" : "Shark Attack"
+  },
+  "-MaKRE3W8RRKLqi0hzbG" : {
+    "description" : "Joke Generator will deliver a Joke from the Joke Generator API, we start with the setup and can click to see the punchline, and then get another joke from the API. I was especially fond of this project, because who doesn't love testing an API and getting numerous good jokes along the way?",
+    "firebaseKey" : "-MaKRE3W8RRKLqi0hzbG",
+    "image" : "https://github.com/caseywalker/images/blob/main/JG2.PNG?raw=true",
+    "link" : "https://cw-jokes.netlify.app",
+    "title" : "Joke Generator"
+  },
+  "-MaKRXD-G1BlBz-PekLA" : {
+    "description" : "This app was designed to display an image and description of various pets available for adoption. This will allow the user to see the picture of available pets, along with their name and a short description. The list of available pets can be easily updated with a few simple steps.",
+    "firebaseKey" : "-MaKRXD-G1BlBz-PekLA",
+    "image" : "https://raw.githubusercontent.com/caseywalker/pet-adoption/pet-adoption/pet-adoption.PNG",
+    "link" : "https://caseywalker-pet-adoption.netlify.app",
+    "title" : "Pet Adoption"
+  }
+}
