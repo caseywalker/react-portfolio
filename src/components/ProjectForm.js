@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { addProject } from '../helpers/data/projectData';
+import { addProject, updateProject } from '../helpers/data/projectData';
 
-export default function ProjectForm({ setProjects }) {
+export default function ProjectForm({
+  setProjects,
+  formTitle,
+  firebaseKey,
+  imageUrl,
+  description,
+  title,
+  link,
+}) {
   const [project, setProject] = useState({
-    title: '',
-    link: '',
-    image: '',
-    description: ''
+    title: title || '',
+    link: link || '',
+    image: imageUrl || '',
+    description: description || '',
+    firebaseKey: firebaseKey || null
   });
 
   const handleInputChange = (e) => {
@@ -19,13 +28,17 @@ export default function ProjectForm({ setProjects }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    addProject(project).then((projectArray) => setProjects(projectArray));
+    if (project.firebaseKey) {
+      updateProject(project).then((projectsArray) => setProjects(projectsArray));
+    } else {
+      addProject(project).then((projectArray) => setProjects(projectArray));
+    }
   };
 
   return (
     <div>
-      <form id="add-author-form" autoComplete="off" onSubmit={handleSubmit}>
-        <h2>Add Project</h2>
+      <form className="project-form" autoComplete="off" onSubmit={handleSubmit}>
+        <h2>{formTitle}</h2>
         <label>Title: </label>
         <input
           name="title"
@@ -65,5 +78,11 @@ export default function ProjectForm({ setProjects }) {
 }
 
 ProjectForm.propTypes = {
-  setProjects: PropTypes.func
+  setProjects: PropTypes.func,
+  formTitle: PropTypes.string.isRequired,
+  firebaseKey: PropTypes.string,
+  imageUrl: PropTypes.string,
+  description: PropTypes.string,
+  title: PropTypes.string,
+  link: PropTypes.string,
 };

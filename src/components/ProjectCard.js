@@ -14,7 +14,7 @@ function ProjectCard({
 }) {
   return (
     <div className='project-card'>
-      <Card>
+      <Card className='non-admin-project-card'>
         <CardImg top width="100%" src={imageUrl} alt="Card image cap" />
         <CardBody>
           <CardTitle className="card-title">{title}</CardTitle>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getProjects } from '../helpers/data/projectData';
-import ProjectCard from './ProjectCard';
+import ProjectCardAdmin from './ProjectCardAdmin';
 import ProjectForm from './ProjectForm';
 
 function ProjectsAdmin() {
@@ -13,19 +13,23 @@ function ProjectsAdmin() {
   return (
     <div className='project-board'>
       <a className='test' name='projectlink'></a>
+      <div className='add-project-form'>
+      <ProjectForm setProjects={setProjects} formTitle={'Add Project'} />
+      </div>
       <p>Projects</p>
       <hr />
       <div className='projects'>
-      <ProjectForm setProjects={setProjects} />
+      <br />
         {
           projects.map((projectInfo) => (
-            <ProjectCard
+            <ProjectCardAdmin
             key={projectInfo.firebaseKey}
             firebaseKey={projectInfo.firebaseKey}
             imageUrl={projectInfo.image}
             description={projectInfo.description}
             title={projectInfo.title}
             link={projectInfo.link}
+            setProjects={setProjects}
             />
           ))
          }
